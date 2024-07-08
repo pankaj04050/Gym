@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Trademill",
+    "img": "../../ASSETS/Equipments/trademill.png",
+    "description": "Starting at",
+    "button": {
+      "text": "Click me",
+      "link": "https://example.com"
+    }
+  },
+  {
+    "title": "Trademill",
+    "img": "../../ASSETS/Equipments/trademill.png",
+    "description": "Starting at",
+    "button": {
+      "text": "Click me",
+      "link": "https://example.com"
+    }
+  },
+  {
+    "title": "Trademill",
+    "img": "../../ASSETS/Equipments/trademill.png",
+    "description": "Starting at",
+    "button": {
+      "text": "Click me",
+      "link": "https://example.com"
+    }
+  }
+]
