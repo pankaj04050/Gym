@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --color-background: width;
+  --color-special: #872341;
+  --color-logo: #c33313;
+  --color-special-text: #f05941;
+  --color-common-text: black;
+  --color-light-grey: rgba(0, 0, 0, 0.158);
+
+  /* fonts  */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --size-btn: 1.2rem;
+  --pad-btn: 5px 10px;
+  --font-size-heading: 3rem;
+  --font-size-para: 1.2rem;
+
+  --border-radius-1: 0.4rem;
+
+  /* transitions */
+  --trans-200: all 200ms ease;
+  --trans-300: all 300ms ease;
+  --trans-1s: all 1s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-common-text);
+}
+
+/* animations */
+
+.fade-in {
+  animation: fadeIn 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}

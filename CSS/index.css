@@ -1,0 +1,378 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../ASSETS/backgrounds/hero-sec-backhground-24244.jpeg)
+    no-repeat center / cover;
+}
+
+.hero .container .left-sec {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.hero .container .left-sec h1 {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  margin: 0;
+  line-height: 60/84;
+  font-size: 50px;
+}
+
+.hero .container .left-sec p {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+}
+
+.hero .container .left-sec a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* CSS */
+.hero .container .left-sec .button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.details .container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.details .container .card {
+  text-align: center;
+  width: calc(300px);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--primary-font);
+}
+
+.details .container .card .content h2 {
+  font-size: 1.7rem;
+  margin-top: 15px;
+}
+
+.details .container .card .content h2 span {
+  font-size: 1.3rem;
+}
+.details .container .card .content p {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.details .container .card button {
+  color: #0057e4f0;
+  background: none;
+  font-size: 1.2rem;
+  border: 1px solid #0057e4f0;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: all 0.4s ease;
+}
+.details .container .card button:hover {
+  color: white;
+  background: #0057e4f0;
+}
+
+.shop-now {
+  width: 100%;
+  height: 85vh;
+  background: url(../ASSETS/backgrounds/Meteor.svg) no-repeat center / cover;
+  margin-top: 40px;
+}
+
+.shop-now .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shop-now .container h1 {
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.shop-now .container .card-section {
+  width: 100%;
+  height: 90% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.shop-now .container .card-section .card {
+  background: white;
+  width: 320px;
+  padding: 20px 0;
+  height: 500px;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px 0px;
+  font-family: var(--primary-font);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid transparent;
+  transition: box-shadow 0.3s ease, border-radius 1.2s ease;
+}
+
+.shop-now .container .card-section .card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.492);
+  border-radius: 12px;
+}
+
+.shop-now .container .card-section .card h2 {
+  font-size: 1.2rem;
+  color: #725ac1;
+}
+
+.shop-now .container .card-section .card img {
+  width: 250px;
+  transition: filter 0.4s ease;
+}
+
+.shop-now .container .card-section .card img:hover {
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.shop-now .container .card-section .card div p {
+  color: #dc9595;
+}
+.shop-now .container .card-section .card a {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725ac1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725ac1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725ac1;
+}
+
+.shop-now .container .card-section .card a:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725ac1;
+}
+
+.shop-now .container .card-section .card a:active {
+  transform: scale(0.9);
+}
+
+.brand {
+  width: 100%;
+  height: 50vh auto;
+  text-align: center;
+  margin: 50px 0;
+}
+.brand h1 {
+  margin: 50px 0;
+  text-align: center;
+  padding: 20px 0px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.brand .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  padding: 0 30px;
+  gap: 30px;
+}
+
+.brand .container img {
+  max-width: 150px; /* Ensure images do not exceed the width of their container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px;
+}
+
+.review {
+  width: 100% auto;
+  height: 50vh auto;
+  text-align: center;
+  margin: 50px 0;
+  background: url(../ASSETS/backgrounds/stacked-peaks-haikei.svg) no-repeat
+    center / cover;
+  transition: all 0.5s ease;
+}
+.review h1 {
+  margin: 50px 0;
+  text-align: center;
+  padding: 20px 0px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.review .container {
+  flex-wrap: wrap;
+  height: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.review .container .card {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.review .container .card .message-box {
+  width: 90%;
+  height: 350px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 90%,
+    55% 90%,
+    50% 100%,
+    45% 90%,
+    0 90%
+  );
+  background: #f2f1f1;
+}
+
+.review .container .card .message-box i {
+  margin-top: 10px;
+}
+
+.review .container .card .message-box p {
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: left;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review .container .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .hero {
+    background-position: left;
+  }
+  .hero .container .left-sec {
+    width: 100%;
+  }
+
+  .details {
+    height: auto;
+  }
+
+  .details .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .details .container .card button {
+    margin-top: 40px;
+  }
+
+  .shop-now {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .shop-now .container .card-section {
+    flex-direction: column;
+  }
+
+  .brand .container img {
+    width: 100px !important;
+  }
+
+  
+}

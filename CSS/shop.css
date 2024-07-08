@@ -1,0 +1,209 @@
+.shopping{
+  width: auto;
+  height: 100vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.shopping .items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum width of each card and the number of cards per row */
+  grid-gap: 20px; /* Adjust the gap between cards */
+  justify-items: center; /* Horizontally center the items */
+}
+
+.card {
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(100% - 40px); /* Subtract the total horizontal padding from the width */
+  max-width: 300px; /* Limit the maximum width of the card */
+  height:  autp
+  ;
+  margin: 20px;
+  background: whitesmoke;
+  display: inline-block; /* Ensure the cards are displayed inline */
+  position: relative;
+}
+
+.card .off{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+  margin: 3px;
+}
+.card .off p{
+  color: white;
+  font-family: var(--secondary-font);
+}
+
+.card img{
+  width: 100%;
+  height: 60%;
+}
+
+.card h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  line-height: 1.3em;
+  margin: 5px 0;
+}
+
+.card p{
+  font-family: var(--secondary-font);
+  font-size: 10pxpx;
+  line-height: 1.3em;
+  margin: 5px 0;
+}
+
+.card .price strike{
+  color: red;
+}
+
+.card .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .buttons .button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.card .buttons .button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.card .buttons .button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.card .buttons .button::after,.card .buttons .button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.card .buttons .button .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .buttons .button .button-wrapper,.card .buttons .button .text,.card .buttons .button .icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.card .buttons .button .text {
+  top: 0
+}
+
+.card .buttons .button .text,.icon {
+  transition: top 0.5s;
+}
+
+.card .buttons .button .icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .buttons .button .icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.card .buttons .button:hover {
+  background: #222;
+}
+
+.card .buttons .button:hover .text {
+  top: -100%;
+}
+
+.card .buttons .button:hover .icon {
+  top: 0;
+}
+
+.card .buttons .button:hover:before,.card .buttons .button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .buttons .button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.card .buttons .button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+.card-button {
+  display: flex;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+
+ .card-button i{
+  color: black;
+ }
+ 
+ .card-button:hover{
+  filter: drop-shadow( 0 0 5px rgb(0, 0, 0));
+ }
+ 
+
+
+
+
