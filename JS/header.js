@@ -76,7 +76,7 @@ menuButton.addEventListener("click", () => {
 const logoDiv = document.querySelector(".logo");
 const img = document.createElement("img");
 
-img.src = "../ASSETS/Logos/main-logo.png";
+img.src = "ASSETS/Logos/main-logo.png";
 img.alt = "Company Fitness LOGO GYM";
 img.width = 300;
 
